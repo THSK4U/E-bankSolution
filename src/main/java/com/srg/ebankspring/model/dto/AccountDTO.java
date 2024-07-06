@@ -12,4 +12,5 @@ public class AccountDTO {
     private String balance;
     private LocalDateTime creationDate;
     private UserDTO user;
+
 }
