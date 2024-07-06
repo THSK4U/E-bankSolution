@@ -1,4 +1,4 @@
-package com.srg.ebankspring.model;
+package com.srg.ebankspring.model.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
