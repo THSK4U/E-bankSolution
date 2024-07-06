@@ -20,7 +20,7 @@ public class Account {
     private String balance;
     private LocalDateTime creationDate;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 }
