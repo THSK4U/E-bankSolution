@@ -3,14 +3,10 @@ package com.srg.ebankspring.service;
 import com.srg.ebankspring.model.dto.AccountDTO;
 import com.srg.ebankspring.model.entity.Account;
 import com.srg.ebankspring.model.mapper.AccountMapper;
-import com.srg.ebankspring.model.mapper.AccountMapperImpl;
-import com.srg.ebankspring.model.mapper.TransactionMapper;
 import com.srg.ebankspring.repository.AccountRepository;
-import com.srg.ebankspring.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.io.Console;
 import java.util.ArrayList;
 import java.util.List;
 

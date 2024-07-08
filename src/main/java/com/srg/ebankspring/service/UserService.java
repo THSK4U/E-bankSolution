@@ -28,8 +28,7 @@ public class UserService implements IUserService {
 
     @Override
     public void deleteUser(Long userId) {
-        userRepository.delete(userRepository.findById(userId)
-                .orElseThrow(() -> new RuntimeException("aucun user")));
+        userRepository.delete(userRepository.findById(userId).get());
     }
 
     @Override

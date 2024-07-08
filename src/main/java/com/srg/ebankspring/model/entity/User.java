@@ -20,6 +20,4 @@ public class User {
     private String password;
     private String phoneNumber;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<Account> account;
 }

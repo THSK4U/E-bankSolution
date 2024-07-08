@@ -9,7 +9,7 @@ public class AccountDTO {
 
     private Long accountId;
     private String accountType;
-    private String balance;
+    private Double balance;
     private LocalDateTime creationDate;
     private UserDTO user;
 

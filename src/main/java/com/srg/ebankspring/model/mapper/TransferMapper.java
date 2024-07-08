@@ -5,7 +5,8 @@ import com.srg.ebankspring.model.entity.Transfer;
 import org.mapstruct.Mapper;
 
 import java.util.List;
-@Mapper(componentModel = "sprint")
+
+@Mapper(componentModel = "spring")
 public interface TransferMapper {
     Transfer toEntity(TransferDTO DTO);
     TransferDTO toDTO(Transfer entity);

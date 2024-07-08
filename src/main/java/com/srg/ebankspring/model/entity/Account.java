@@ -18,7 +18,7 @@ public class Account {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long accountId;
     private String accountType;
-    private String balance;
+    private Double balance;
 
     @Column(updatable = false)
     private LocalDateTime creationDate;
@@ -27,11 +27,11 @@ public class Account {
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
-    @OneToMany(mappedBy = "sourceAccount", cascade = CascadeType.ALL)
-    private List<Transfer> outgoingTransfers;
+    @OneToMany(mappedBy = "sourceAccount")
+    private List<Transfer> sourceTransfers;
 
-    @OneToMany(mappedBy = "targetAccount", cascade = CascadeType.ALL)
-    private List<Transfer> incomingTransfers;
+    @OneToMany(mappedBy = "targetAccount")
+    private List<Transfer> targetTransfers;
 
     @PrePersist
     protected void onCreate() {

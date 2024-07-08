@@ -18,10 +18,10 @@ public class Transfer {
     private String description;
 
     @ManyToOne
-    @JoinColumn(name = "source_account_id", nullable = false)
+    @JoinColumn(name = "sourceaccountId", nullable = false)
     private Account sourceAccount;
 
     @ManyToOne
-    @JoinColumn(name = "target_account_id", nullable = false)
+    @JoinColumn(name = "targetaccountId", nullable = false)
     private Account targetAccount;
 }
